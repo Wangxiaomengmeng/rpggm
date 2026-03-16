@@ -5,6 +5,9 @@ plugins {
     id "com.google.gms.google-services"
 }
 
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+
 android {
     namespace "com.example.rpg_game"
     compileSdk 34
@@ -39,5 +42,5 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
