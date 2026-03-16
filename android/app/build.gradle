@@ -5,6 +5,10 @@ plugins {
     id "com.google.gms.google-services"
 }
 
+// 👇 加上这两行，flutterVersionCode 就找到了！
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+
 android {
     namespace "com.example.rpg_game"
     compileSdk 34
