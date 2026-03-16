@@ -17,10 +17,12 @@ android {
         versionName "1.0"
     }
 
+    // 修复后的正确配置
     buildTypes {
         release {
             signingConfig signingConfigs.debug
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
         }
     }
 
