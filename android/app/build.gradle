@@ -5,10 +5,6 @@ plugins {
     id "com.google.gms.google-services"
 }
 
-// 👇 加上这两行，flutterVersionCode 就找到了！
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
-
 android {
     namespace "com.example.rpg_game"
     compileSdk 34
@@ -17,8 +13,8 @@ android {
         applicationId "com.example.rpg_game"
         minSdk 21
         targetSdk 34
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
@@ -42,6 +38,4 @@ flutter {
     source "../.."
 }
 
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0"
-}
+dependencies {}
