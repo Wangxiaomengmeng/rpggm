@@ -30,9 +30,7 @@ android {
     }
 
     kotlinOptions {
-        compilerOptions {
-            jvmTarget.set("1.8")
-        }
+        jvmTarget = "1.8"
     }
 }
 
